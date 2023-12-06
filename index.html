@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Jhansi</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <div class="container-center">
+                <h2>Table Data</h2>
+                <br>
+                <span>Anda ingin merubah atau mengecek semua data?</span>
+                <a href="table.php"><button>klik disini</button></a>
+                <h2>Logout</h2>
+                <span>Anda ingin keluar?</span>
+                <a href="router/logout.php"><button class="logout">Logout</button></a>
+            </div>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="router/action.php" method="post">
+                <h1>Selamat Datang</h1>
+                <br>
+                <span>Input Data </span>
+                <input type="text" name="nama" placeholder="Masukan nama anda">
+                <input type="text" name="npm" placeholder="Masukan npm..">
+                <input type="text" name="kelas" placeholder="Masukan kelas anda">
+                
+                <button>simpan</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Input Data</h1>
+                    <p>Anda ingin menginput data?</p>
+                    <button class="ghost" id="signIn">Input Data</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Lihat Data</h1>
+                    <p>Anda ingin melihat semua data?</p>
+                    <button class="ghost" id="signUp">cek data</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/JS/main.js"></script>
+</body>
+
+</html>
